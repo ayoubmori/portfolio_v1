@@ -1,0 +1,78 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0056b3;
+    color: white;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 20px;
+}
+
+/* Portfolio layout */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Project card styles */
+.project {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Project title */
+.project h2 {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin: 10px 0;
+}
+
+/* Project image */
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+/* Link styles */
+.project a {
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #0056b3;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
