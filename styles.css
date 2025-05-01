@@ -2,26 +2,62 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f7f9fc;
+    background-color: #ebf1f7;
     color: #333;
+    background: linear-gradient(100deg, #002c5a, #01458e, #288cf7);
 }
 
 /* Header styles */
 header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
-    background-color: #0056b3;
+    /* background-color: #0056b3;
+    background-image: url(assets/imgs/background.jpg);
+    background: linear-gradient(100deg, #002c5a, #01458e, #288cf7); */
+    /* background-image: url(background2.jpg); */
     color: white;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
+.profile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-header p {
-    margin: 10px 0 20px;
+.profile-desc {
+    font-size: 0.73rem;
+    margin-top: 20px;
 }
+
+.profile-pic {
+    display: flex;
+    justify-content: end;
+}
+
+.profile-pic img {
+    width: 200px;
+    height: 200px
+}
+
+.links {
+    display: flex;
+    gap: 7px;
+}
+
+.social-link {
+    color: white;
+    text-decoration: underline;
+    font-size: 0.9rem;
+}
+
+/* added */
+
+
 
 /* Portfolio layout */
 .portfolio {
